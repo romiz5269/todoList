@@ -1,0 +1,206 @@
+/* ======== TodoBody Component =======*/
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.container h1 {
+  margin: 40px auto;
+}
+.disableLoading {
+  display: none;
+}
+.loading {
+  border: 4px solid #b8b6b6; /* Light grey */
+  border-top: 4px solid #333; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.TodoBody {
+  background-color: #f3f0f0;
+  margin: 10px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.TodoInput {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  border-radius: 10px;
+  width: 95%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.TodoInput form {
+  width: 80%;
+}
+.TodoInput input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  outline: none;
+  font-size: 17px;
+}
+.TodoList {
+  width: 100%;
+  padding: 10px;
+}
+.TodoItem {
+  min-height: 400px;
+}
+.NoTask {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NoTask p {
+  font-size: 50px;
+  color: #ccc;
+}
+/* ======== SingleTask Component =======*/
+
+.SingleTask {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.SingleTask input {
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background-color: #ccc;
+}
+.TaskContent {
+  border-radius: 10px;
+  width: 60%;
+}
+.TaskContent p {
+  text-align: left;
+  padding: 10px;
+  color: #333;
+  font-size: 16px;
+}
+.TaskFilerOption select {
+  padding: 13px 30px;
+  background-color: #fff;
+  outline: 0;
+  border: 1px solid #f4f4f4;
+  border-radius: 6px;
+}
+
+.TaskDelete span {
+  cursor: pointer;
+  color: crimson;
+}
+
+/* ======== FiltersTask Component =======*/
+.FiltersTask {
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-top: 3px solid #ccc;
+}
+.FiltersHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FiltersHeader h2 {
+  text-align: left;
+}
+.FiltersOptions {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.FiltersStatus {
+  display: inline;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+.FiltersStatus input {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.FiltersStatus input label {
+  display: inline;
+}
+.FilterColors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.FilterColors div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2px;
+}
+.FilterColors div input {
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+}
+.FilterColors div span {
+  font-size: 13px;
+  border-radius: 10px;
+  height: 25px;
+  width: 95px;
+}
+.FilterColors div:nth-child(2) span {
+  background-color: black;
+  color: #fff;
+}
+.FilterColors div:nth-child(3) span {
+  background-color: red;
+  color: #fff;
+}
+.FilterColors div:nth-child(4) span {
+  background-color: yellow;
+  color: black;
+}
+.FilterColors div:nth-child(5) span {
+  background-color: green;
+  color: #fff;
+}
+.FilterColors div:nth-child(6) span {
+  background-color: blue;
+  color: #fff;
+}
